@@ -4,10 +4,10 @@ Je n'en avais pas parlé la première fois et je trouve cela très dommage car l
 # Mon super commentaire d'exemple
 
 Cette ligne, bien qu'insérée dans notre code, ne sera pas prise en compte par Python (elle est ignorée, tout simplement). Par contre, il est intéressant de placer ce genre de ligne, car vous pouvez ainsi mieux décrire ce que fait le code que vous avez écrit. En effet, lorsque vous aller relire votre code dans quelques mois, vous n'allez pas vous rappeler de ce que vous avez pensé en écrivant le code et ... vous n'allez pas le comprendre en le lisant. Ne vous inquiétez pas, cela arrive à tout le monde. De plus, vous pouvez aussi partager votre code (ou avoir à le montrer à quelqu'un d'autre, pour qu'il vous aide) et donc, celui-ci pour comprendre rapidement votre code, pourra lire les commentaires.
-Avec le caractère '#' vous ne pouvez que commenter sur une ligne, ce qui peut ne pas être très pratique. Pour commenter sur plusieurs lignes, vous pouvez utiliser trois guillemets ("""). Voici un exemple :
-"""
-Ma fonction affiche le plan du métro dans une nouvelle fenêtre
-Pour cela, elle charge un fichier, puis ouvre une fenêtre et affiche le plan
+Avec le caractère `#` vous ne pouvez que commenter sur une ligne, ce qui peut ne pas être très pratique. Pour commenter sur plusieurs lignes, vous pouvez utiliser trois guillemets ("""). Voici un exemple :
+    """
+    Ma fonction affiche le plan du métro dans une nouvelle fenêtre
+    Pour cela, elle charge un fichier, puis ouvre une fenêtre et affiche le plan
     """
     def afficherPlan():
         ...
@@ -43,6 +43,7 @@ Bref, pour les fonctions, Python introduit un nouveau mot clé : def. Il permet 
 
 Le fait d'appeler une fonction, fait que le programmation va d'abord exécuter le code dans la fonction, avant de continuer d'executer la suite linéaire du programme.
 Si j'écris :
+
     print "1"
     maFonction()
     print "2"
@@ -54,6 +55,7 @@ Ma fonction trop utile
 
 
 Deux particularités. Une fonction peut prendre des paramètres. Ce sont des variables qui seront utilisés dans la fonction et qui provienne du moment où la fonction est appelée :
+
     def afficheBonjour(nombre):
         i=0
         while(i<nombre):
