@@ -1,4 +1,4 @@
-# [## Les commentaires] 
+# Les commentaires 
 
 Je n'en avais pas parlé la première fois et je trouve cela très dommage car les commentaires sont vraiment importants dans le code. Les commentaires, ce sont des lignes que Python ne prendra pas en compte. Ainsi, vous pouvez écrire tout ce que souhaitez :
 # Mon super commentaire d'exemple
@@ -28,7 +28,7 @@ Par contre, si votre variable i, permet de passer à la prochaine case d'un tabl
 Pour le moment, nous n'avons pas vraiment eu besoin des commentaires, car nous avons fait l'algorithme au tableau de nos programme, tous ensemble. Mais, un jour viendra ou je vais vous laisser faire l'algorithme seul et pour comprendre comment vous avez conçu votre programme, j'aurais besoin d'une explication avec les commentaires.
 
 
-Les fonctions
+# Les fonctions
 
 Au fur et à mesure, nos programmes vont devenir plus complexe. Ce n'est pas un réel soucis, par contre, nous devons l'organiser. Si vous voulez, on peut comparer cela à une bibliothèque. Actuellement, nous avons deux livres et c'était facile de s'y retrouver. Mais bientôt, nous aurons des centaines de livres et, pour les retrouver facilement, nous les rangeons par ordre alphabétique. Au final, un programme c'est pareil. Il va savoir faire de plus en plus de choses (afficher des données, se connecter à un site web, jouer un son ...) et chacune de ces tâches, nous allons en faire une fonction. D'une part, cela nous évitera de copier coller le code pour jouer un son, à chaque fois que nous voulons jouer un son, mais en plus, cela permettra d'organiser le programme.
 
