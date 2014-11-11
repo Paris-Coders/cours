@@ -1,5 +1,4 @@
-# [Présentation générale] ## Les commentaires
-# [Présentation générale](https://github.com/karthik/webnativesci)
+# [## Les commentaires] 
 
 Je n'en avais pas parlé la première fois et je trouve cela très dommage car les commentaires sont vraiment importants dans le code. Les commentaires, ce sont des lignes que Python ne prendra pas en compte. Ainsi, vous pouvez écrire tout ce que souhaitez :
 # Mon super commentaire d'exemple
@@ -9,17 +8,17 @@ Avec le caractère '#' vous ne pouvez que commenter sur une ligne, ce qui peut n
 """
 Ma fonction affiche le plan du métro dans une nouvelle fenêtre
 Pour cela, elle charge un fichier, puis ouvre une fenêtre et affiche le plan
-"""
-def afficherPlan():
-    ...
-    ...
+    """
+    def afficherPlan():
+        ...
+        ...
 
 Attention ! Vos commentaires ne doivent pas dire en français exactement ce que fait la ligne :
 i=i+1 # Incrémente le compteur i
 
 Car là, c'est totalement inutile (c'est redondant). Le code est lisible et le lecteur comprend en lisant le code que vous incrémenter la variable i.
 Par contre, si votre variable i, permet de passer à la prochaine case d'un tableau, vous pouvez mettre :
-i=i+1 # On avance d'une case pour continuer l'algorithme
+    i=i+1 # On avance d'une case pour continuer l'algorithme
 
 (Même si là, ce n'est pas très très utile, mais c'est pour l'exemple.)
 
@@ -32,11 +31,12 @@ Au fur et à mesure, nos programmes vont devenir plus complexe. Ce n'est pas un 
 Par exemple, si un jour, vous remarquez qu'il y a un soucis avec votre fonction pour jouer un son, vous corrigez la fonction qui joue un son et hop, quelque soit l'endroit (dans le programme) où le son est joué, la fonction corrigée est appelée. Si on avait fait un copier-coller (chose qui devrait être interdite en programmation), il aurait fallu corriger le code autant de fois qu'il aurait été copier. Et je peux vous dire, par expérience, on oublie toujours un endroit.
 
 Bref, pour les fonctions, Python introduit un nouveau mot clé : def. Il permet d'indiquer que l'on va faire une fonction, comme suit :
-def maFonction():
-    print "Ma fonction trop utile"
+    
+    def maFonction():
+        print "Ma fonction trop utile"
 
-# Et pour l'appeler 
-maFonction()
+    # Et pour l'appeler 
+    maFonction()
 
 Le fait d'appeler une fonction, fait que le programmation va d'abord exécuter le code dans la fonction, avant de continuer d'executer la suite linéaire du programme.
 Si j'écris :
