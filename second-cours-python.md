@@ -14,10 +14,12 @@ Pour cela, elle charge un fichier, puis ouvre une fenêtre et affiche le plan
         ...
 
 Attention ! Vos commentaires ne doivent pas dire en français exactement ce que fait la ligne :
-i=i+1 # Incrémente le compteur i
+
+    i=i+1 # Incrémente le compteur i
 
 Car là, c'est totalement inutile (c'est redondant). Le code est lisible et le lecteur comprend en lisant le code que vous incrémenter la variable i.
 Par contre, si votre variable i, permet de passer à la prochaine case d'un tableau, vous pouvez mettre :
+
     i=i+1 # On avance d'une case pour continuer l'algorithme
 
 (Même si là, ce n'est pas très très utile, mais c'est pour l'exemple.)
@@ -28,6 +30,7 @@ Pour le moment, nous n'avons pas vraiment eu besoin des commentaires, car nous a
 Les fonctions
 
 Au fur et à mesure, nos programmes vont devenir plus complexe. Ce n'est pas un réel soucis, par contre, nous devons l'organiser. Si vous voulez, on peut comparer cela à une bibliothèque. Actuellement, nous avons deux livres et c'était facile de s'y retrouver. Mais bientôt, nous aurons des centaines de livres et, pour les retrouver facilement, nous les rangeons par ordre alphabétique. Au final, un programme c'est pareil. Il va savoir faire de plus en plus de choses (afficher des données, se connecter à un site web, jouer un son ...) et chacune de ces tâches, nous allons en faire une fonction. D'une part, cela nous évitera de copier coller le code pour jouer un son, à chaque fois que nous voulons jouer un son, mais en plus, cela permettra d'organiser le programme.
+
 Par exemple, si un jour, vous remarquez qu'il y a un soucis avec votre fonction pour jouer un son, vous corrigez la fonction qui joue un son et hop, quelque soit l'endroit (dans le programme) où le son est joué, la fonction corrigée est appelée. Si on avait fait un copier-coller (chose qui devrait être interdite en programmation), il aurait fallu corriger le code autant de fois qu'il aurait été copier. Et je peux vous dire, par expérience, on oublie toujours un endroit.
 
 Bref, pour les fonctions, Python introduit un nouveau mot clé : def. Il permet d'indiquer que l'on va faire une fonction, comme suit :
@@ -40,29 +43,30 @@ Bref, pour les fonctions, Python introduit un nouveau mot clé : def. Il permet 
 
 Le fait d'appeler une fonction, fait que le programmation va d'abord exécuter le code dans la fonction, avant de continuer d'executer la suite linéaire du programme.
 Si j'écris :
-print "1"
-maFonction()
-print "2"
+    print "1"
+    maFonction()
+    print "2"
 
 Le programme affichera :
-1
+    1
 Ma fonction trop utile
-2
+    2
 
 
 Deux particularités. Une fonction peut prendre des paramètres. Ce sont des variables qui seront utilisés dans la fonction et qui provienne du moment où la fonction est appelée :
-def afficheBonjour(nombre):
-    i=0
-    while(i<nombre):
-        print "Bonjour"
-        i=i+1
+    def afficheBonjour(nombre):
+        i=0
+        while(i<nombre):
+            print 'Bonjour'
+            i=i+1
 
-afficheBonjour(5)
+    afficheBonjour(5)
 
-Ici, on affiche cinq fois bonjour. Mais si un jour, je veux afficher dix fois bonjour, j'ai simplement à lui donner en paramètre 10.
+Ici, on affiche cinq fois bonjour. Mais si un jour, je veux afficher dix fois bonjour, j''''ai simplement à lui donner en paramètre 10.
+
 Par contre, il est important de noter que les paramètres sont copiés :
 def maFonction(toto):
-   print "Ma fonction"
+   print ''''Ma fonction''''
    toto=toto+1
    
 titi=42
@@ -73,29 +77,30 @@ Ceci affiche
 Ma fonction
 42
 
-Car, la variable "toto" dans la fonction "maFonction()" est locale et elle n'existe que dans la fonction. En réalité, cette variable toto, contient une copie du contenu de la variable titi passée lors de l'appel de la fonction. Cette variable toto n'existe plus lors de la fin de la fonction.
-La seconde particularité est qu'une fonction peut retourner une valeur :
-def donneNombre():
-    return 42
+Car, la variable """"toto"""" dans la fonction """"maFonction()"""" est locale et elle n''''existe que dans la fonction. En réalité, cette variable toto, contient une copie du contenu de la variable titi passée lors de l''''appel de la fonction. Cette variable toto n''''existe plus lors de la fin de la fonction.
+La seconde particularité est qu''''une fonction peut retourner une valeur :
+
+    def donneNombre():
+        return 42
 
 Pour indiquer la valeur à retourner, il faut utiliser le mot clé return. Ici, je peux faire :
-toto = donneNombre()
-print toto
+
+    toto = donneNombre()
+    print toto
 
 Ce qui affichera 42.
-
 
 Le jeu des allumettes
 
 Le jeu des allumettes est connu, notamment car il était utilisé dans une des épreuves de réflexion de Fort Boyard.
-C'est un jeu à deux joueurs. Dans notre cas, la machine ne fait que gérer le jeu (une sorte d'arbitre).
+C''''est un jeu à deux joueurs. Dans notre cas, la machine ne fait que gérer le jeu (une sorte d''''arbitre).
 Quinze allumettes sont posées sur la table. Chaque joueur joue à tour de rôle. Chaque joueur peut prendre soit 1, 2 ou 3 allumettes. Le joueur qui prend la dernière allumette a perdu.
 
-Il faut comprendre que les allumettes ce sont des choses qui n'existent pas réellement dans un PC. En réalité, ce qui nous intéresse, ce n'est pas vraiment que ce sont des allumettes, mais simplement, leur nombre. Du coup, on va juste utiliser une variable contenant, le nombre d'allumettes. Ensuite, il n'y a pas vraiment de chose compliquée :
+Il faut comprendre que les allumettes ce sont des choses qui n''''existent pas réellement dans un PC. En réalité, ce qui nous intéresse, ce n''''est pas vraiment que ce sont des allumettes, mais simplement, leur nombre. Du coup, on va juste utiliser une variable contenant, le nombre d''''allumettes. Ensuite, il n''''y a pas vraiment de chose compliquée :
 
 nombreAllumettes = 15
 
-Tant qu'il y a des allumettes
+Tant qu''''il y a des allumettes
     Afficher nombre allumettes
     choix = demander nombre allumettes prises
     if choix >= 1 ET choix <= 3
@@ -106,12 +111,12 @@ Afficher défaite
 
 Ce qui nous donnera, en code :
 
-nombreAllumettes = 15
-while nombreAllumettes > 0:
-    print "Il y a " + str(nombreAllumettes) + " sur la table"
-    choix = input()
-    if choix >= 1 and choix <= 3:
-       nombreAllumettes = nombreAllumettes - choix
+    nombreAllumettes = 15
+    while nombreAllumettes > 0:
+        print "Il y a " + str(nombreAllumettes) + " sur la table"
+        choix = input()
+        if choix >= 1 and choix <= 3:
+            nombreAllumettes = nombreAllumettes - choix
 
 print "Vous avez perdu"
 
@@ -124,34 +129,34 @@ De plus, ici, nous voyons comment faire deux tests avec un seul if. En réalité
     OU (or)
 
 Ainsi :
-if cond1 and cond2:
+    if cond1 and cond2:
 
 Ne sera vrai que si la condition 1 ET la condition 2 seront valides.
-if cond1 or cond2:
+    if cond1 or cond2:
 
 Ne sera vrai si l'une ou l'autre des condition est validée.
 
-
 Dernier point, dans le code du jeu, c'est la concaténation de chaîne de caractères.
 Vous pouvez toujours écrire :
-print "Mon " + "code " + "est "  + "super"
+    print "Mon " + "code " + "est "  + "super"
 
 Le '+' indique à Python qu'il devra concaténer (mettre bout à bout) les différentes chaines de caractère.
 Par contre, si vous essayez avec un nombre :
-print "J'ai " + 42 + " allumettes"
+
+    print "J'ai " + 42 + " allumettes"
 
 Cela vous donnera une erreur. En effet, il ne peux pas mettre bout à bout, une chaine de caractère et un nombre. Par contre, on peut lui dire de transformer le nombre en une chaine de caractère. C'est ce que fait la fonction str().
-print "J'ai " + str(42) + " allumettes"
+
+    print "J'ai " + str(42) + " allumettes"
 
 Ici, str(42), retourne la chaine de caractères "42" (qui est composée du caractère 4 et du caractère 2). Il faut bien comprendre la différence. En effet, 42, c'est un nombre, sur lequel vous pouvez faire des opérations arithmétiques classiques (additions, multiplications...). "42" est une chaine de caractère (un ensemble de caractère). Vous ne pouvez pas faire d'addition avec, par contre, vous pouvez appliquer les fonctions sur les chaines de caractères.
 
 J'espère que c'est clair, en tout cas, n'hésitez pas à demander des précisions ou des explications supplémentaires.
-
 
 Exercices
 
 Notre jeu des allumettes, il est assez nul. Vous pouvez l'améliorer et je vous sollicite à le faire et à nous montrer vos améliorations. Parmi celles-ci, vous pouvez :
 
     Afficher joueur1/joueur2 et afficher le joueur qui a gagné
-    Faire jouer l'ordinateur en tant que joueur 2 :) (pour le début il prendra un nombre aléatoire d'allumettes, voir le cours précédent ;) )
-    Trouver une méthode pour gagner à 100 % et l'implémenter pour que l'ordinateur l'utilise (c'est simple, c'est une méthode mathématique).
+    Faire jouer l'ordinateur en tant que joueur 2 :) (pour le début il prendra un nombre aléatoire d'allumettes, voir le cours     précédent ;) )
+    Trouver une méthode pour gagner à 100 % et l'implémenter pour que l'ordinateur l'utilise (c'est simple, c'est une méthode     mathématique).
