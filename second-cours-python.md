@@ -5,6 +5,7 @@ Je n'en avais pas parlé la première fois et je trouve cela très dommage car l
 
 Cette ligne, bien qu'insérée dans notre code, ne sera pas prise en compte par Python (elle est ignorée, tout simplement). Par contre, il est intéressant de placer ce genre de ligne, car vous pouvez ainsi mieux décrire ce que fait le code que vous avez écrit. En effet, lorsque vous aller relire votre code dans quelques mois, vous n'allez pas vous rappeler de ce que vous avez pensé en écrivant le code et ... vous n'allez pas le comprendre en le lisant. Ne vous inquiétez pas, cela arrive à tout le monde. De plus, vous pouvez aussi partager votre code (ou avoir à le montrer à quelqu'un d'autre, pour qu'il vous aide) et donc, celui-ci pour comprendre rapidement votre code, pourra lire les commentaires.
 Avec le caractère `#` vous ne pouvez que commenter sur une ligne, ce qui peut ne pas être très pratique. Pour commenter sur plusieurs lignes, vous pouvez utiliser trois guillemets ("""). Voici un exemple :
+    
     """
     Ma fonction affiche le plan du métro dans une nouvelle fenêtre
     Pour cela, elle charge un fichier, puis ouvre une fenêtre et affiche le plan
@@ -69,7 +70,7 @@ Ici, on affiche cinq fois bonjour. Mais si un jour, je veux afficher dix fois bo
 Par contre, il est important de noter que les paramètres sont copiés :
 
     def maFonction(toto):
-        print ''''Ma fonction''''
+        print 'Ma fonction'
         toto=toto+1
    
     titi=42
@@ -103,13 +104,13 @@ Il faut comprendre que les allumettes ce sont des choses qui n''''existent pas r
 
 nombreAllumettes = 15
 
-    Tant qu''''il y a des allumettes
+    Tant qu'il y a des allumettes
         Afficher nombre allumettes
         choix = demander nombre allumettes prises
         if choix >= 1 ET choix <= 3
             nombreAllumettes = nombreAllumettes - choix
 
-Afficher défaite
+    Afficher défaite
 
 
 Ce qui nous donnera, en code :
@@ -121,7 +122,7 @@ Ce qui nous donnera, en code :
         if choix >= 1 and choix <= 3:
             nombreAllumettes = nombreAllumettes - choix
 
-print "Vous avez perdu"
+    print "Vous avez perdu"
 
 Ici, il y a tout de même des particularités.
 Déjà, le while. Nous ne faisons pas un simple != 0, car si le joueur prend 2 allumettes alors qu'il y en restait une, le programme verrait que nombreAllumettes = -1, ce qui est également différent de zéro, et il continuerai indéfiniment.
