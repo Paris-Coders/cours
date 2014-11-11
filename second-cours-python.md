@@ -67,17 +67,18 @@ Deux particularités. Une fonction peut prendre des paramètres. Ce sont des var
 Ici, on affiche cinq fois bonjour. Mais si un jour, je veux afficher dix fois bonjour, j''''ai simplement à lui donner en paramètre 10.
 
 Par contre, il est important de noter que les paramètres sont copiés :
-def maFonction(toto):
-   print ''''Ma fonction''''
-   toto=toto+1
-   
-titi=42
-maFonction(titi)
-print titi
 
-Ceci affiche
-Ma fonction
-42
+    def maFonction(toto):
+        print ''''Ma fonction''''
+        toto=toto+1
+   
+    titi=42
+    maFonction(titi)
+    print titi
+
+    Ceci affiche
+    Ma fonction
+    42
 
 Car, la variable """"toto"""" dans la fonction """"maFonction()"""" est locale et elle n''''existe que dans la fonction. En réalité, cette variable toto, contient une copie du contenu de la variable titi passée lors de l''''appel de la fonction. Cette variable toto n''''existe plus lors de la fin de la fonction.
 La seconde particularité est qu''''une fonction peut retourner une valeur :
@@ -102,11 +103,11 @@ Il faut comprendre que les allumettes ce sont des choses qui n''''existent pas r
 
 nombreAllumettes = 15
 
-Tant qu''''il y a des allumettes
-    Afficher nombre allumettes
-    choix = demander nombre allumettes prises
-    if choix >= 1 ET choix <= 3
-       nombreAllumettes = nombreAllumettes - choix
+    Tant qu''''il y a des allumettes
+        Afficher nombre allumettes
+        choix = demander nombre allumettes prises
+        if choix >= 1 ET choix <= 3
+            nombreAllumettes = nombreAllumettes - choix
 
 Afficher défaite
 
@@ -131,15 +132,18 @@ De plus, ici, nous voyons comment faire deux tests avec un seul if. En réalité
     OU (or)
 
 Ainsi :
+
     if cond1 and cond2:
 
 Ne sera vrai que si la condition 1 ET la condition 2 seront valides.
+    
     if cond1 or cond2:
 
 Ne sera vrai si l'une ou l'autre des condition est validée.
 
 Dernier point, dans le code du jeu, c'est la concaténation de chaîne de caractères.
 Vous pouvez toujours écrire :
+    
     print "Mon " + "code " + "est "  + "super"
 
 Le '+' indique à Python qu'il devra concaténer (mettre bout à bout) les différentes chaines de caractère.
@@ -151,7 +155,7 @@ Cela vous donnera une erreur. En effet, il ne peux pas mettre bout à bout, une 
 
     print "J'ai " + str(42) + " allumettes"
 
-Ici, str(42), retourne la chaine de caractères "42" (qui est composée du caractère 4 et du caractère 2). Il faut bien comprendre la différence. En effet, 42, c'est un nombre, sur lequel vous pouvez faire des opérations arithmétiques classiques (additions, multiplications...). "42" est une chaine de caractère (un ensemble de caractère). Vous ne pouvez pas faire d'addition avec, par contre, vous pouvez appliquer les fonctions sur les chaines de caractères.
+Ici, `str(42)`, retourne la chaine de caractères "42" (qui est composée du caractère 4 et du caractère 2). Il faut bien comprendre la différence. En effet, 42, c'est un nombre, sur lequel vous pouvez faire des opérations arithmétiques classiques (additions, multiplications...). "42" est une chaine de caractère (un ensemble de caractère). Vous ne pouvez pas faire d'addition avec, par contre, vous pouvez appliquer les fonctions sur les chaines de caractères.
 
 J'espère que c'est clair, en tout cas, n'hésitez pas à demander des précisions ou des explications supplémentaires.
 
