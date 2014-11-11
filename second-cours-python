@@ -1,4 +1,4 @@
-## Les commentaires
+# [Présentation générale] ## Les commentaires
 
 Je n'en avais pas parlé la première fois et je trouve cela très dommage car les commentaires sont vraiment importants dans le code. Les commentaires, ce sont des lignes que Python ne prendra pas en compte. Ainsi, vous pouvez écrire tout ce que souhaitez :
 # Mon super commentaire d'exemple
