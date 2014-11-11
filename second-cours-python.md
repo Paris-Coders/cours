@@ -65,7 +65,7 @@ Deux particularités. Une fonction peut prendre des paramètres. Ce sont des var
 
     afficheBonjour(5)
 
-Ici, on affiche cinq fois bonjour. Mais si un jour, je veux afficher dix fois bonjour, j''''ai simplement à lui donner en paramètre 10.
+Ici, on affiche cinq fois bonjour. Mais si un jour, je veux afficher dix fois bonjour, j'ai simplement à lui donner en paramètre 10.
 
 Par contre, il est important de noter que les paramètres sont copiés :
 
@@ -81,8 +81,8 @@ Par contre, il est important de noter que les paramètres sont copiés :
     Ma fonction
     42
 
-Car, la variable """"toto"""" dans la fonction """"maFonction()"""" est locale et elle n''''existe que dans la fonction. En réalité, cette variable toto, contient une copie du contenu de la variable titi passée lors de l''''appel de la fonction. Cette variable toto n''''existe plus lors de la fin de la fonction.
-La seconde particularité est qu''''une fonction peut retourner une valeur :
+Car, la variable `toto` dans la fonction `maFonction()` est locale et elle n'existe que dans la fonction. En réalité, cette variable toto, contient une copie du contenu de la variable titi passée lors de l'appel de la fonction. Cette variable toto n'existe plus lors de la fin de la fonction.
+La seconde particularité est qu'une fonction peut retourner une valeur :
 
     def donneNombre():
         return 42
@@ -97,10 +97,10 @@ Ce qui affichera 42.
 Le jeu des allumettes
 
 Le jeu des allumettes est connu, notamment car il était utilisé dans une des épreuves de réflexion de Fort Boyard.
-C''''est un jeu à deux joueurs. Dans notre cas, la machine ne fait que gérer le jeu (une sorte d''''arbitre).
+C'est un jeu à deux joueurs. Dans notre cas, la machine ne fait que gérer le jeu (une sorte d'arbitre).
 Quinze allumettes sont posées sur la table. Chaque joueur joue à tour de rôle. Chaque joueur peut prendre soit 1, 2 ou 3 allumettes. Le joueur qui prend la dernière allumette a perdu.
 
-Il faut comprendre que les allumettes ce sont des choses qui n''''existent pas réellement dans un PC. En réalité, ce qui nous intéresse, ce n''''est pas vraiment que ce sont des allumettes, mais simplement, leur nombre. Du coup, on va juste utiliser une variable contenant, le nombre d''''allumettes. Ensuite, il n''''y a pas vraiment de chose compliquée :
+Il faut comprendre que les allumettes ce sont des choses qui n'existent pas réellement dans un PC. En réalité, ce qui nous intéresse, ce n'est pas vraiment que ce sont des allumettes, mais simplement, leur nombre. Du coup, on va juste utiliser une variable contenant, le nombre d'allumettes. Ensuite, il n'y a pas vraiment de chose compliquée :
 
 nombreAllumettes = 15
 
