@@ -13,6 +13,7 @@ Voici un programme simple, envoyant une exception qui n'est pas attrapée :
 var = int("Blah")
 
 Voici ce que le programme affiche :
+
     Traceback (most recent call last):
       File "./test.py", line 1, in <module>
         var = int("Blah")
