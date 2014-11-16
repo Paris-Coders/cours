@@ -31,6 +31,7 @@ Il permet de dire que le code qui va être exécuté est susceptible de lancer u
         var = int("Blah")
 
 Soit. Mais nous n'indiquons pas encore que nous souhaitons attraper une exception. Pour cela, nous avons un autre bloc, introduit par le mot clé except. Plus précisément, il faut indiquer à Python quelle exception vous souhaitez attraper :
+
     try:
        var = int("Blah")
     except Exception:
