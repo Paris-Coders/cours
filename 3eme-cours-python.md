@@ -39,6 +39,7 @@ Soit. Mais nous n'indiquons pas encore que nous souhaitons attraper une exceptio
 
 L'exception va être lancée par int(). Aucun problème, nous avons intégré l'appel à la fonction, dans un bloc try et nous attrapons les exceptions "Exception". Du coup, ici, le programme va afficher "Erreur du programme". C'est bien mieux, car dans ce bloc except, vous pouvez sauvegarder le travail de l'utilisateur par exemple.
 Vous pouvez mettre autant de bloc except que vous souhaitez, afin de spécialiser votre message d'erreur (ou plus généralement, la réaction du programme fasse à l'erreur) :
+
     try:
        var = int("Blah")
     except ValueError:
@@ -52,6 +53,7 @@ Par contre, dans le cas où ce n'est pas une ValueError, le message affiché ser
 Notez que j'ai bien pris la précaution de mettre le cas spécialisé avant le cas généraliste. En effet, Exception toute les exceptions Python sont des Exception (le type). Si j'indique que je souhaite attraper les Exception (cas généraliste) avant d'attraper la ValueError (cas spécifique), alors jamais le programme n'affichera le message "Impossible de convertir" car l'exception se ferait attraper par le cas généraliste.
 
 Il existe un raccourci, pour indiquer le cas généraliste :
+
     try:
        var = int("Blah")
     except ValueError:
