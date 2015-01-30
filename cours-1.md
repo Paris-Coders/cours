@@ -52,7 +52,7 @@ Tant que ...
 ```
 
 On voit immédiatement que l'action dépend du `Si`, qui dépend du `Tant que`.
-En Python, si vous ne respectez pas l'indentation, c'est tout le fonctionnement du programme qui change. En effet, Python utilise l'indentation pour savoir si telle ou telle ligne est comprise dans l'action du si (ou du Tant que). Si vous oubliez d'indenter le code après un Si (ou autre boucle/test), alors il vous indiquera : Indentation Error (erreur d'indentation).
+En Python, si vous ne respectez pas l'indentation, c'est tout le fonctionnement du programme qui change. En effet, Python utilise l'indentation pour savoir si telle ou telle ligne est comprise dans l'action du si (ou du Tant que). Si vous oubliez d'indenter le code après un Si (ou autre boucle/test), alors il vous indiquera : `Indentation Error` (erreur d'indentation).
 
 En programmation, nous avons aussi les variables. Une variable permet à l'ordinateur de retenir une information. Si vous avez fait les exercices de Codecademy, vous avez sûrement déjà saisi cela. Toutefois, le nommage des variables (et des fonctions et des classes... (que nous verrons plus tard)) est très important. En effet, encore une fois, cela joue sur la lisibilité de votre code.
 Une variable doit avoir un nom clair et concis. Si vous voulez stocker le résultat d'une opération (par exemple, une addition), vous pouvez appeler la variable "resultat". Mais si en plus de cela, vous savez que le résultat de l'opération, c'est le prix d'une voiture, alors il sera encore plus clair de l'appeler "prixVoiture" (ou prix).
@@ -73,7 +73,7 @@ Nous allons programmer le jeu du plus ou moins. Ce jeu peut se joue généraleme
  * Joueur A indique si son nombre est plus grand, ou plus petit, ou encore, si Joueur B a trouvé le nombre ;
  * Le jeu continue jusqu'à ce que le Joueur B trouve le nombre (ou encore, jusqu'à qu'ils en aient marre :D).
 
-De cette explication, nous allons en tirer l'algorithme. L'algorithme, c'est une description en français (ou autre) de comment l'ordinateur doit agir. Ici, on ne parle pas encore de programmation, ni de rien qui est lié à la machine. Voici le premier algorithme (incomplet) :
+De cette explication, nous allons en tirer l'algorithme. L'algorithme, c'est une description en français (ou autre) de comment l'ordinateur doit agir. Ici, on ne parle pas encore de programmation, ni de rien qui est lié à la machine. Voici le premier algorithme :
 
 ```
     Prends un nombre "au hasard" entre 1 et 100 (on parle d'aléatoire, en informatique) (appelé secret) ;
@@ -104,7 +104,7 @@ Ok, mais si vous regardez bien, ce n'est suffisant. En effet, ici, on ne demande
 
 (On remarque que j'indente bien mon algorithme)
 
-Bon, j'ai été un peu vite, je l'avoue. N'hésitez pas à poser des questions si vous ne comprenez pas. Pire ! Pendant la séance, je n'avais pas exactement fait l'algorithme de cette façon. Bref, cela me permet de dire : À un problème (ici, celui de faire le jeu du plus ou moins), vous pouvez avoir plusieurs solutions. Rien ne vous oblige de suivre parfaitement ma solution, tant que vous arrivez au résultat. Toutefois, on cherchera souvent la solution la plus immédiate, la moins contraignante, la plus logique et efficace.
+Je ne fais pas toujours mon algorithme de la même façon. Mais ce n'est pas grave, tant que la finalité reste la même. En effet pour un problème (ici, celui de faire le jeu du plus ou moins), vous pouvez avoir plusieurs solutions. Rien ne vous oblige de suivre parfaitement ma solution, tant que vous arrivez au résultat. Toutefois, on cherchera souvent la solution la plus immédiate, la moins contraignante, la plus logique et efficace.
 
 
 ## Implémentation
@@ -113,21 +113,21 @@ Il ne reste qu'une étape. Traduire cet algorithme en code Python. Vraiment, ici
 
 Il y a deux particularités que je vais tout de même vous donner ici :
 
-    Pour que l'ordinateur puisse prendre un nombre aléatoire (entre 1 et 100), il faut écrire :
+Pour que l'ordinateur puisse prendre un nombre aléatoire (entre 1 et 100), il faut écrire :
 ```python
         from random import randint
         randint(1,100)
 ```
-    Pour que l'ordinateur demande à l'utilisateur d'entrée un nombre :
+Pour que l'ordinateur demande à l'utilisateur d'entrée un nombre :
 ```python
         input()
 ```
 
-La ligne "from random import randint" indique à Python, que dans notre code, nous voulons utiliser la fonction randint(). Celle-ci n'est pas disponible par défaut. Elle se trouve dans une boite à outils (module). Donc, on indique clairement à Python : "Dans le module random, importe la fonction randint()". Ainsi, dans le reste du code, vous pouvez utiliser la fonction randint(). Au fur et à mesure, nous verrons sûrement d'autres modules pour faire des choses encore plus avancées.
+La ligne `from random import randint` indique à Python, que dans notre code, nous voulons utiliser la fonction `randint()`. Celle-ci n'est pas disponible par défaut. Elle se trouve dans une boite à outils (module). Donc, on indique clairement à Python : "Dans le module `random`, importe la fonction `randint()`". Ainsi, dans le reste du code, vous pouvez utiliser la fonction `randint()`. Au fur et à mesure, nous verrons sûrement d'autres modules pour faire des choses encore plus avancées.
 
 Note : l'importation de module se fait toujours au début du fichier.
 
-Voici le [code final]() :
+Voici le [code final](https://github.com/Paris-Coders/cours/blob/master/src/plusmoins.py) :
 
 ```python
 	#!/usr/bin/python
