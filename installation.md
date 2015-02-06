@@ -64,7 +64,7 @@ Suivez les instructions au pas à pas jusqu'à que vous lisiez cette phrase: **J
 
 Comme vous pouvez le voir en cliquant [sur l'image] (http://www.noelshack.com/2014-51-1418924249-bandicam-2014-12-18-18-36-35-434.jpg) ci-dessous , il y'a un carré avec *search* 
 
-Tapez les mots ci-dessous et assurez-vous qu'ils soient tous en mode *install* en cliquant sur [l'icône de la boucle] (http://www.reds.msh-paris.fr/communication/images/diebolt021.gif)
+Tapez les mots ci-dessous qui sont des packages dans le carré **Search** et assurez-vous qu'ils soient tous en mode **install** en cliquant sur [l'icône de la boucle] (http://www.reds.msh-paris.fr/communication/images/diebolt021.gif)
 
 - python
 - wget
@@ -74,7 +74,7 @@ Une fois fait, vous avez désormais un émulateur linux.
 
 Ouvrez une fenêtre bash comme on vous le montre dans la seconde étape du lien fourni un peu plus haut.
 
-tapez ```python``` pour voir si tout fonctionne comme il faut.
+tapez ```python``` pour voir si python a bien été installé.
 
 ## Mac OS X
 
