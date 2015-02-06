@@ -86,7 +86,7 @@ Si vous êtes sous Linux, on pense que vous êtes à même de le faire ;)
 
 Tapez `python` et voyez ce qu'il en est
 
-Si cela ne s'installe pas , tapez
+Si cela n'est pas installé , tapez
 
 ```sudo apt-get install python```
 
