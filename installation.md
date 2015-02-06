@@ -76,11 +76,21 @@ Ouvrez une fenêtre bash en cliquant sur l'onglet *Cygwin Terminal* qui se trouv
 
 Une fois la fenêtre ouverte, tapez ```python``` pour voir si python a bien été installé.
 
-## Mac OS X
+## Linux et Mac OS X
 
-## Linux
+Linux et Mac , c'est le même combat car pour les deux , vous devez ouvrir un terminal
 
-La bonne nouvelle : il est installé de base.
-Si ce n'était pas le cas, utilisez votre gestionnaire de paquets et cherchez python 2, afin de l'installer.
+Pour Mac, cette vidéo vous montrera [comment faire] (https://www.youtube.com/watch?v=zw7Nd67_aFw)
+
+Si vous êtes sous Linux, on pense que vous êtes à même de le faire ;)
+
+Tapez `python` et voyez ce qu'il en est
+
+Si cela ne s'installe pas , tapez
+
+```sudo apt-get install python```
+
+
+
 
 
