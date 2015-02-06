@@ -54,7 +54,7 @@ Voilà, c'est prêt.
 ### Méthode avec cygwin
 
 Cygwin est un programme qui permet à différentes version de Windows, d'émuler Unix. Il faut télécharger Cygwin 
-dans [https://cygwin.com/setup-x86.exe] (le lien suivant)
+dans le lien suivant [https://cygwin.com/setup-x86.exe] (test)
 
 
 ## Mac OS X
