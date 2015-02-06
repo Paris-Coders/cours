@@ -56,6 +56,28 @@ Voilà, c'est prêt.
 Cygwin est un programme qui permet à différentes version de Windows, d'émuler Unix. Il faut télécharger Cygwin 
 dans le lien suivant [https://cygwin.com/setup-x86.exe] (https://cygwin.com/setup-x86.exe)
 
+Les guides d'installation foisonnent sur Internet , de ce fait nous ne ferons pas un nouveau guide.
+
+Nous vous conseillons celui-ci qui est récent et nous semble très bien : [https://forums.oneplus.net/threads/tuto-installation-cygwin-et-kitchen-par-konigtiger.214228/] (https://forums.oneplus.net/threads/tuto-installation-cygwin-et-kitchen-par-konigtiger.214228/)
+
+Suivez les instructions au pas à pas jusqu'à : *Je vous conseille vivement dans cette étape d'installer tout les packages disponible en cliquant sur "le cercle noir avec deux flèches inversée l'une de l'autre". Cliquez "Suivant"*
+
+Comme vous pouvez le voir en cliquant sur l'image ci-dessous , il y'a un carré avec *search* (voir l'image) [http://www.noelshack.com/2014-51-1418924249-bandicam-2014-12-18-18-36-35-434.jpg] (http://www.noelshack.com/2014-51-1418924249-bandicam-2014-12-18-18-36-35-434.jpg)
+
+Tapez les mots ci-dessous et assurez-vous qu'ils soient tous en mode *install* en cliquant sur l'icône de la boucle [l'icône de la boucle] (http://www.reds.msh-paris.fr/communication/images/diebolt021.gif)
+
+- python
+- wget
+- svn
+
+
+Une fois fait, vous avez désormais un émulateur linux.
+
+Ouvrez une fenêtre bash comme on vous le montre dans la seconde étape du lien fourni un peu plus haut.
+
+
+
+
 
 ## Mac OS X
 
