@@ -70,11 +70,11 @@ Tapez les mots ci-dessous qui sont des packages dans le carré **Search** et ass
 - wget
 - svn
 
-Une fois fait, vous avez désormais un émulateur linux.
+Vous avez désormais un émulateur linux.
 
-Ouvrez une fenêtre bash comme on vous le montre dans la seconde étape du lien fourni un peu plus haut.
+Ouvrez une fenêtre bash en cliquant sur l'onglet *Cygwin Terminal* qui se trouve sur votre bureau.
 
-tapez ```python``` pour voir si python a bien été installé.
+Une fois la fenêtre ouverte, tapez ```python``` pour voir si python a bien été installé.
 
 ## Mac OS X
 
