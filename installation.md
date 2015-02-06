@@ -13,7 +13,7 @@ Afin de pouvoir travailler, il vous faut cet exécutable Python, permettant ains
 Autrement dit, vous allez pouvoir utiliser n'importe quel logiciel de texte (Bloc notes, Notepad++, gedit, kedit, Sublime Text...)
 pour écrire votre code dans un fichier, fichier que sera ensuite lu par Python pour l'exécuter et produire le résultat.
 Au final, pour lancer Python et lui dire de lire (d'exécuter) un fichier, il faudra faire ainsi :
-```
+```bash
 	python nom_du_fichier.py
 ```
 Par contre, il faudra le faire dans une invite de commande (aussi appelé terminal).
