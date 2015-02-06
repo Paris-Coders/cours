@@ -44,7 +44,7 @@ Durant ces cours, nous utilisons Python 2.7.
 
 ### Méthode basique
 
-* [https://www.python.org/ftp/python/2.7.9/python-2.7.9.msi](Téléchargez Python 2.7) ;
+* [https://www.python.org/ftp/python/2.7.9/python-2.7.9.msi]https://www.python.org/ftp/python/2.7.9/python-2.7.9.msi) ;
 * Installez le fichier téléchargé ;
 * Cliquez deux fois sur `Next` ;
 * Sur la page du choix des composants à installer, sélectionnez `Add python.exe to Path` ;
@@ -54,7 +54,7 @@ Voilà, c'est prêt.
 ### Méthode avec cygwin
 
 Cygwin est un programme qui permet à différentes version de Windows, d'émuler Unix. Il faut télécharger Cygwin 
-dans le lien suivant [https://cygwin.com/setup-x86.exe] (test)
+dans le lien suivant [https://cygwin.com/setup-x86.exe] (https://cygwin.com/setup-x86.exe)
 
 
 ## Mac OS X
