@@ -58,9 +58,9 @@ dans le lien suivant [https://cygwin.com/setup-x86.exe] (https://cygwin.com/setu
 
 Les guides d'installation foisonnent sur Internet , de ce fait nous ne ferons pas un nouveau guide.
 
-Nous vous conseillons [ce lien] (https://forums.oneplus.net/threads/tuto-installation-cygwin-et-kitchen-par-konigtiger.214228/) qui est récent et nous semble très bie
+Nous vous conseillons [ce lien] (https://forums.oneplus.net/threads/tuto-installation-cygwin-et-kitchen-par-konigtiger.214228/) qui est récent et nous semble très bien
 
-Suivez les instructions au pas à pas jusqu'à : *Je vous conseille vivement dans cette étape d'installer tout les packages disponible en cliquant sur "le cercle noir avec deux flèches inversée l'une de l'autre". Cliquez "Suivant"*
+Suivez les instructions au pas à pas jusqu'à que vous lisiez cette phrase: **Je vous conseille vivement dans cette étape d'installer tout les packages disponible en cliquant sur "le cercle noir avec deux flèches inversée l'une de l'autre". Cliquez "Suivant"**
 
 Comme vous pouvez le voir en cliquant [sur l'image] (http://www.noelshack.com/2014-51-1418924249-bandicam-2014-12-18-18-36-35-434.jpg) ci-dessous , il y'a un carré avec *search* 
 
