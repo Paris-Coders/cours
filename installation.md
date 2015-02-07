@@ -88,10 +88,10 @@ Tapez `python` et voyez ce qu'il en est
 
 Si le package Python n'est pas installé , tapez
 
-- Pour Linux: ```sudo apt-get install python```
+- Pour Linux: ```sudo apt-get install python``` suivi de votre mot de passe
 - Pour MAC:  ```brew install python```
 
-Les commandes ci-dessus vous installeront python
+Les commandes ci-dessus vous permettront d'installer python
 
 
 
