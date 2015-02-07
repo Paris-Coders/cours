@@ -78,19 +78,20 @@ Une fois la fenêtre ouverte, tapez ```python``` , Python devrait bien avoir ét
 
 ## Linux et Mac OS X
 
-Linux et Mac , c'est le même combat car pour les deux , vous devez ouvrir un terminal
+Linux et Mac , c'est presque le même combat car pour les deux , vous devez ouvrir un terminal
 
-Pour Mac, cette vidéo vous montrera [comment faire] (https://www.youtube.com/watch?v=zw7Nd67_aFw)
-
-Si vous êtes sous Linux, on pense que vous êtes à même de le faire ;)
+- Pour Mac, cette vidéo vous montrera [comment faire] (https://www.youtube.com/watch?v=zw7Nd67_aFw)
+- Pour Linux , pour accéder au terminal il faut faire avec sa souris : *Applications -> Accessoires*
+  ou bien *Applications -> Outils système* et chercher *terminal* ou *konsole* ou *xterm* 
 
 Tapez `python` et voyez ce qu'il en est
 
-Si cela n'est pas installé , tapez
+Si le package Python n'est pas installé , tapez
 
-```sudo apt-get install python```
+- Pour Linux: ```sudo apt-get install python```
+- Pour MAC:  ```brew install python```
 
-Cette commande va vous installer python
+Les commandes ci-dessus vous installeront python
 
 
 
