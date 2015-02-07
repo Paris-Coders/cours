@@ -74,7 +74,7 @@ Vous avez désormais un émulateur linux.
 
 Ouvrez une fenêtre bash en cliquant sur l'onglet *Cygwin Terminal* qui se trouve sur votre bureau.
 
-Une fois la fenêtre ouverte, tapez ```python``` pour voir si python a bien été installé.
+Une fois la fenêtre ouverte, tapez ```python``` , Python devrait bien avoir été installé.
 
 ## Linux et Mac OS X
 
@@ -89,6 +89,8 @@ Tapez `python` et voyez ce qu'il en est
 Si cela n'est pas installé , tapez
 
 ```sudo apt-get install python```
+
+Cette commande va vous installer python
 
 
 
