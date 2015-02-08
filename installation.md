@@ -64,10 +64,10 @@ Si vous avez un quelconque problème ou doute, durant l'installation de cygwin, 
 Suivez les instructions au pas à pas jusqu'à que vous lisiez cette phrase: **Je vous conseille vivement dans cette étape d'installer tout les packages disponible en cliquant sur "le cercle noir avec deux flèches inversée l'une de l'autre". Cliquez "Suivant"**
 
 Comme vous pouvez le voir :
-![sur l'image] (http://www.noelshack.com/2014-51-1418924249-bandicam-2014-12-18-18-36-35-434.jpg)
+![sur l'image] (http://image.noelshack.com/fichiers/2014/51/1418924249-bandicam-2014-12-18-18-36-35-434.jpg)
 il y'a un carré avec *search* 
 
-Tapez les mots ci-dessous qui sont des packages dans le carré **Search** et assurez-vous qu'ils soient tous en mode **install** en cliquant sur ![l'icône de la boucle] (http://www.reds.msh-paris.fr/communication/images/diebolt021.gif)
+Tapez les mots ci-dessous qui sont des packages dans le carré **Search** et assurez-vous qu'ils soient tous en mode **install** en cliquant sur l'icône de boucle.
 
 - python
 - wget
