@@ -1,24 +1,24 @@
 # Installer Python
 
 Ce premier tutoriel, que nous pourrions appeler tutoriel zéro, n'est qu'un simple tutoriel d'installation de Python.
-Si vous avez déjà Python sur votre machine, celui-ci ne vous sera d'aucune utilité.
+Si vous avez déjà Python sur votre machine, ce tutoriel ne vous sera d'aucune utilité.
 
 ## Introduction
 
 Python désigne deux choses :
 * le langage de programmation ;
-* un exécutable, permettant de lire du code écrit en langage Python.
+* un exécutable, appelé interpréteur, permettant de lire du code écrit en langage Python.
 
-Afin de pouvoir travailler, il vous faut cet exécutable Python, permettant ainsi de lire le code que vous allez l'écrire.
+Afin de pouvoir travailler, il vous faut l'interpréteur Python, permettant ainsi de lire le code que vous allez l'écrire.
 Autrement dit, vous allez pouvoir utiliser n'importe quel logiciel de texte (Bloc notes, Notepad++, gedit, kedit, Sublime Text...)
 pour écrire votre code dans un fichier, fichier que sera ensuite lu par Python pour l'exécuter et produire le résultat.
 Au final, pour lancer Python et lui dire de lire (d'exécuter) un fichier, il faudra faire ainsi :
 ```bash
 	python nom_du_fichier.py
 ```
-Par contre, il faudra le faire dans une invite de commande (aussi appelé terminal).
+Par contre, il faudra le faire dans une invite de commande (aussi appelé terminal, sous Linux et Mac OS).
 
-Heureusement, des éditeurs de code évolués effectuent cette commande pour vous. Toutefois, dans ce tutoriel, nous nous pencherons surtout sur une installation basique (de Python seulement), vous laissant ainsi le choix sur l'éditeur de code.
+Heureusement, des éditeurs de code évolués effectuent cette commande pour vous en lui donnant en paramètre, le nom du fichier actuellement en cours d'édition. Toutefois, dans ce tutoriel, nous nous pencherons surtout sur une installation basique (de Python seulement), vous laissant ainsi le choix sur l'éditeur de code.
 
 ### Tester l'installation
 
@@ -53,18 +53,21 @@ Voilà, c'est prêt.
 
 ### Méthode avec cygwin
 
-Cygwin est un programme qui permet à différentes version de Windows, d'émuler Unix. Il faut télécharger Cygwin 
-dans le lien suivant [https://cygwin.com/setup-x86.exe] (https://cygwin.com/setup-x86.exe)
+Cygwin est un programme qui permet à différentes version de Windows, d'émuler Unix et donc d'avoir la multitude de commande et de programmes utiles au sein de Windows. 
+Il faut télécharger Cygwin dans le lien suivant [https://cygwin.com/setup-x86.exe] (https://cygwin.com/setup-x86.exe). Durant l'installation, vous devez vous assurer d'installer :
+* python
+* wget
+* svn
 
-Les guides d'installation foisonnent sur Internet , de ce fait nous ne ferons pas un nouveau guide.
-
-Nous vous conseillons [ce lien] (https://forums.oneplus.net/threads/tuto-installation-cygwin-et-kitchen-par-konigtiger.214228/) qui est récent et nous semble très bien
+Si vous avez un quelconque problème ou doute, durant l'installation de cygwin, vous pouvez consulter [ce tutoriel] (https://forums.oneplus.net/threads/tuto-installation-cygwin-et-kitchen-par-konigtiger.214228/).
 
 Suivez les instructions au pas à pas jusqu'à que vous lisiez cette phrase: **Je vous conseille vivement dans cette étape d'installer tout les packages disponible en cliquant sur "le cercle noir avec deux flèches inversée l'une de l'autre". Cliquez "Suivant"**
 
-Comme vous pouvez le voir en cliquant [sur l'image] (http://www.noelshack.com/2014-51-1418924249-bandicam-2014-12-18-18-36-35-434.jpg) ci-dessous , il y'a un carré avec *search* 
+Comme vous pouvez le voir :
+![sur l'image] (http://www.noelshack.com/2014-51-1418924249-bandicam-2014-12-18-18-36-35-434.jpg)
+il y'a un carré avec *search* 
 
-Tapez les mots ci-dessous qui sont des packages dans le carré **Search** et assurez-vous qu'ils soient tous en mode **install** en cliquant sur [l'icône de la boucle] (http://www.reds.msh-paris.fr/communication/images/diebolt021.gif)
+Tapez les mots ci-dessous qui sont des packages dans le carré **Search** et assurez-vous qu'ils soient tous en mode **install** en cliquant sur ![l'icône de la boucle] (http://www.reds.msh-paris.fr/communication/images/diebolt021.gif)
 
 - python
 - wget
@@ -76,23 +79,22 @@ Ouvrez une fenêtre bash en cliquant sur l'onglet *Cygwin Terminal* qui se trouv
 
 Une fois la fenêtre ouverte, tapez ```python``` , Python devrait bien avoir été installé.
 
-## Linux et Mac OS X
+## Linux 
 
-Linux et Mac , c'est presque le même combat car pour les deux , vous devez ouvrir un terminal
+Dans de nombreuses distributions, Python est installé par défaut.
+Si ce n'est pas le cas, il suffit d'utiliser le gestionnaire de paquet et d'installer Python (2.7). Si vous n'avez aucune idée de tout cela, veuillez vous référer à la documentation officielle de votre distribution.
 
-- Pour Mac, cette vidéo vous montrera [comment faire] (https://www.youtube.com/watch?v=zw7Nd67_aFw)
-- Pour Linux , pour accéder au terminal il faut faire avec sa souris : *Applications -> Accessoires*
-  ou bien *Applications -> Outils système* et chercher *terminal* ou *konsole* ou *xterm* 
+Pour lancer Python, il suffira d'ouvrir un `terminal` et de taper `python`.
 
-Tapez `python` et voyez ce qu'il en est
+## Mac OS X
 
-Si le package Python n'est pas installé , tapez
-
-- Pour Linux: ```sudo apt-get install python``` suivi de votre mot de passe
-- Pour MAC:  ```brew install python```
-
-Les commandes ci-dessus vous permettront d'installer python
-
+Pour trouver le terminal, utilisez [la recherche] (https://www.youtube.com/watch?v=zw7Nd67_aFw) et tapez `terminal`.
+Cela ouvre une nouvelle fenêtre dans laquelle vous pouvez taper `python` pour lancer Python.
+Si celui-ci n'est pas installer, insérez la commande suivante pour l'installer :
+```
+	brew install python
+```
+(La commande vous demandera votre mot de passe, sans quoi elle ne peut faire l'installation.)
 
 
 
