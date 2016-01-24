@@ -9,4 +9,4 @@ d'apprentissage, mais tout autre langage aurait pu être pris comme base.
 En effet, la programmation en tant que telle n'est pas liée à un 
 langage.
 
-Bonne lecture !
+Merci et bonne lecture !
